@@ -55,13 +55,13 @@ const FluidMenu = () => {
   const iconStrokeWidth = 1;
 
   return (
-    <Card className="shadow-lg">
+    <Card className="shadow-lg" id="day1">
       <CardHeader>
         <CardTitle>Day 1 - Fluid Menu Animation</CardTitle>
         {/* <CardDescription></CardDescription> */}
       </CardHeader>
       <CardContent>
-        <motion.div className="w-fit h-64 mx-auto">
+        <motion.div className="w-fit min-h-64 mx-auto">
           <motion.button
             type="button"
             onClick={toggleMenu}

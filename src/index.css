@@ -16,6 +16,16 @@
 
 @theme {
   --default-font-family: system-ui, inter;
+  --animate-wiggle: wiggle 0.3s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3.9deg);
+    }
+    50% {
+      transform: rotate(3.9deg);
+    }
+  }
 }
 
 @theme inline {
