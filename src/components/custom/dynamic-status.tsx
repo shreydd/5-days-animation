@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   CheckCircle2,
-  LoaderCircleIcon,
   ShieldIcon,
   TriangleAlert,
 } from "lucide-react";
