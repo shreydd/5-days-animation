@@ -3,6 +3,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Instrument Serif", serif;
+  font-style: normal;
+  src: url('./assets/fonts/InstrumentSerif-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Instrument Serif italic';
+  src: url('./assets/fonts/InstrumentSerif-Italic.ttf') format('ttd');
+}
+
+@theme {
+  --default-font-family: system-ui, inter;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
