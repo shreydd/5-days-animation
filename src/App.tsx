@@ -3,6 +3,7 @@ import { FluidMenu } from "./components/custom/fluid-menu";
 import { motion } from "motion/react";
 import { DynamicStatusBtn } from "./components/custom/dynamic-status";
 import { AnimatedCheckboxes } from "./components/custom/animated-checkboxes";
+import { AnimatedTogglesContainer } from "./components/custom/animated-toggles";
 
 const compsVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -27,11 +28,12 @@ function App() {
         initial={"hidden"}
         animate={"visible"}
         variants={compsVariants}
-        className="mt-16 space-y-16"
+        className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6"
       >
         <FluidMenu />
         <DynamicStatusBtn />
         <AnimatedCheckboxes />
+        <AnimatedTogglesContainer />
       </motion.div>
     </div>
   );

@@ -100,7 +100,7 @@ const AnimatedCheckboxes = () => {
 
             <span
               className={cn(
-                "relative inline-block",
+                "relative inline-block line-clamp-1",
                 activeCheckbox && "text-gray-500"
               )}
             >
