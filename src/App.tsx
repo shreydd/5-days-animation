@@ -2,6 +2,7 @@ import { Hero } from "./components/custom/hero";
 import { FluidMenu } from "./components/custom/fluid-menu";
 import { motion } from "motion/react";
 import { DynamicStatusBtn } from "./components/custom/dynamic-status";
+import { AnimatedCheckboxes } from "./components/custom/animated-checkboxes";
 
 const compsVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -30,6 +31,7 @@ function App() {
       >
         <FluidMenu />
         <DynamicStatusBtn />
+        <AnimatedCheckboxes />
       </motion.div>
     </div>
   );

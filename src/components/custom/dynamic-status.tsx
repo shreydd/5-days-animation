@@ -1,9 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  CheckCircle2,
-  ShieldIcon,
-  TriangleAlert,
-} from "lucide-react";
+import { CheckCircle2, ShieldIcon, TriangleAlert } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
@@ -96,11 +92,6 @@ const DynamicStatusBtn = () => {
             {status === "analyzing" && (
               <motion.span className="flex gap-1 items-center bg-blue-100 px-4 py-2 rounded-full text-blue-500 font-normal">
                 <motion.div>
-                  {/* <LoaderCircleIcon
-                    color="blue"
-                    className="animate-spin"
-                    size={16}
-                  /> */}
                   <svg
                     className="mr-3 -ml-1 size-5 animate-spin text-blue-500"
                     xmlns="http://www.w3.org/2000/svg"
