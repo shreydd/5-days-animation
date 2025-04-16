@@ -33,7 +33,7 @@ const AnimatedCheckboxes = () => {
       <CardContent className="max-w-fit min-h-64 flex items-center mx-auto">
         <div className="">
           <motion.button
-            className="text-gray-700 bg-blue bg-blue rounded flex items-center size-fit gap-2"
+            className="text-gray-700 hover:cursor-pointer hover:bg-gray-50 px-4 py-2 rounded-lg flex items-center size-fit gap-2"
             onClick={() => toggleCheckBox()}
           >
             <motion.svg
@@ -66,6 +66,7 @@ const AnimatedCheckboxes = () => {
                     height="24"
                     x="4"
                     y="4"
+                    stroke="#2b7fff"
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0 }}
@@ -75,6 +76,8 @@ const AnimatedCheckboxes = () => {
                       scale: { type: "spring", duration: 0.2, bounce: 0.5 },
                     }}
                     style={{
+                      strokeWidth: 2,
+                      strokeLinecap: "round",
                       fill: "#2b7fff",
                       borderRadius: "4px",
                     }}
