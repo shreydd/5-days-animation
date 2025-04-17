@@ -72,7 +72,7 @@ const AnimatedToggles = ({ items }: { items: string[] }) => {
           className={cn(
             "cursor-pointer py-2 flex flex-col justify-center items-center relative z-10 transition-all duration-300",
             item === selected && "text-white",
-            item === "Free" ? "px-16" : "px-12"
+            item === "Free" ? "px-16" : "px-4"
           )}
         >
           {item === "Free" && <div className="font-semibold">{item}</div>}

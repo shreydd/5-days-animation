@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { DynamicStatusBtn } from "./components/custom/dynamic-status";
 import { AnimatedCheckboxes } from "./components/custom/animated-checkboxes";
 import { AnimatedTogglesContainer } from "./components/custom/animated-toggles";
+import { SharedLayoutTabs } from "./components/custom/shared-layout-tabs";
 
 const compsVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -34,6 +35,7 @@ function App() {
         <DynamicStatusBtn />
         <AnimatedCheckboxes />
         <AnimatedTogglesContainer />
+        <SharedLayoutTabs />
       </motion.div>
     </div>
   );
