@@ -40,6 +40,25 @@ const bounties = [
   },
 ];
 
+const BountyImg = ({item}: {item?: typeof bounties[number]}) => {
+  return (
+    <motion.img
+      layoutId={`berries-${item?.name || 'b'}`}
+      alt="berries"
+      src="https://static.wikia.nocookie.net/onepiece/images/d/de/Beli.png"
+      decoding="async"
+      loading="lazy"
+      width="12"
+      height="12"
+      className=""
+      data-image-name="Beli.png"
+      data-image-key="Beli.png"
+      data-relevant="0"
+      data-src="https://static.wikia.nocookie.net/onepiece/images/d/de/Beli.png/revision/latest?cb=20141206091723"
+    />
+  );
+};
+
 function SharedLayoutTabs() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
@@ -48,9 +67,9 @@ function SharedLayoutTabs() {
       <CardHeader>
         <CardTitle>Day-5: Shared Layout Tabs</CardTitle>
       </CardHeader>
-      <CardContent className="min-h-[600px] w-fit mx-auto flex items-start transition-all duration-300">
-        <motion.div className="space-y-2 w-96">
-          <h2 className="">Bounty</h2>
+      <CardContent className="min-h-[800px] w-fit mx-auto flex items-start transition-all duration-300">
+        <motion.div className="space-y-2 w-full max-w-96">
+          <div className="font-semibold flex flex-row gap-[0.5px]"><BountyImg/><span className="h-fit">ounty</span></div>
 
           <div className="flex flex-col w-full">
             <nav className="border-b border-[#eeeeee] pb-4">
@@ -142,20 +161,7 @@ function SharedLayoutTabs() {
                               layoutId={`price-img-${item.name}`}
                               className="text-neutral-400 text-sm font-medium flex gap-1 items-center"
                             >
-                              <motion.img
-                                layoutId={`berries-${item.name}`}
-                                alt="berries"
-                                src="https://static.wikia.nocookie.net/onepiece/images/d/de/Beli.png"
-                                decoding="async"
-                                loading="lazy"
-                                width="10"
-                                height="10"
-                                className=""
-                                data-image-name="Beli.png"
-                                data-image-key="Beli.png"
-                                data-relevant="0"
-                                data-src="https://static.wikia.nocookie.net/onepiece/images/d/de/Beli.png/revision/latest?cb=20141206091723"
-                              />{" "}
+                              <BountyImg item={item} />
                               <motion.span layoutId={`price-${item.name}`}>{item.price}</motion.span>
                             </motion.span>{" "}
                           </motion.p>
