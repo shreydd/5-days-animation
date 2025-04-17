@@ -23,8 +23,15 @@ const Hero = () => {
         className="mt-6"
       >
         <p className="text-pretty text-gray-700  text-lg text-center">
-          An attempt at the ui animation challenges listed <br /> by Peerlist x
-          Aceternity
+          An attempt at the UI animation challenges listed <br /> by{" "}
+          <a
+            href="https://peerlist.io/challenges/ui-animation-challenge"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Peerlist x Aceternity
+          </a>{" "}
         </p>
       </motion.div>
     </section>
